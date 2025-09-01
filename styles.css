@@ -23,7 +23,9 @@ img {
 }
 
 button {
+	color: #111;
 	background-color: #999;
+	text-decoration: none;
 }
 
 a {
