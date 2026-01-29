@@ -14,6 +14,10 @@ const poems = [
 	[
 		"Less_Oboe",
 		"shhhhhh\nshe hisses\nbegs bliss\nobliges less oboe"
+	],
+	[
+		"Eggshell_Ego",
+		"booze sloshes\nhe giggles sillie goose-ish\nhoggish gibes belie\nhis eggshell ego"
 	]
 ];
 

@@ -7,20 +7,26 @@ for (p of fileNames) {
 	flipped.push(Array.from("1".repeat(p.length)))
 }
 
+const title = document.getElementById("title");
+const text = document.getElementById("text");
+
 function slide(n) {
 	pos = ((pos + n % len) + len) % len;
 	textQ = false;
-	document.getElementById("text").innerText = "";
+	title.innerText = "";
+	text.innerText = "";
 	show(pos)
 }
 
 var textQ = false;
 function showtext() {
 	textQ = !textQ;
-	const text = document.getElementById("text");
 	if (textQ) {
+		let titleText = (poems[pos][0]).replace("_", " ");
+		title.innerText = titleText;
 		text.innerText = poems[pos][1]
 	} else {
+		title.innerText = "";
 		text.innerText = ""
 	}
 }
