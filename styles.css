@@ -30,10 +30,16 @@ button {
 
 a {
 	color: #333;
-	position: fixed;
+}
+
+
+.poemText {
+	min-height: 200px;
+}
+
+.footer {
+	color: #555;
 	text-align: center;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	margin-bottom: 16px;
+	max-width: 500px;
+	margin: 16px auto;
 }

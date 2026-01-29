@@ -1,10 +1,10 @@
 var pos = 0;
 const poemtable = document.getElementById("poem");
-// poems and fileNames are defined in a separate .js file to keep this script.js file tidy
+// poems and fileNames are defined in a separate poems.js file
 const len = fileNames.length;
 var flipped = [];
 for (p of fileNames) {
-	flipped.push(Array.from("1".repeat(p.length)))
+	flipped.push(Array.from("0".repeat(p.length)))
 }
 
 const title = document.getElementById("title");
@@ -48,15 +48,17 @@ function show(n) {
 	}
 }
 
+// n is the index of the poem, i is the index of the line in the poem
 function flipButton(n, i) {
 	const button = document.createElement("button");
 	button.class = "flipButton";
 	button.innerText = "flip";
 	button.onclick = function() {
-		let f = flipped[n][i];
+		let f = (flipped[n][i] + 1) % 2;
+		button.style.transform = 'rotate(' + 180 * f + 'deg)';
 		const line = document.getElementById("line" + n + i);
 		line.src = fileNames[n][i][f];
-		flipped[n][i] = (f + 1) % 2;
+		flipped[n][i] = f;
 	}
 	return button
 }

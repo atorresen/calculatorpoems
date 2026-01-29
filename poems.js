@@ -29,8 +29,8 @@ poems.forEach(info => {
 	let numLines = info[1].split("\n").length + 1;
 	for (let i = 1; i < numLines; i++) {
 		poemFiles.push([
-			"images/" + title + "_" + i + "_numbers.png",
-			"images/" + title + "_" + i + "_letters.png"
+			"images/" + title + "_" + i + "_letters.png",
+			"images/" + title + "_" + i + "_numbers.png"
 		])
 	};
 	fileNames.push(poemFiles)
