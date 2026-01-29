@@ -18,6 +18,10 @@ const poems = [
 	[
 		"Eggshell_Ego",
 		"booze sloshes\nhe giggles sillie goose-ish\nhoggish gibes belie\nhis eggshell ego"
+	],
+	[
+		"Big_World",
+		"hills - isles - sloes - bogs -\nillegible size boggles his lobes\nglobe so big he loses his sessile shell\nloose he ogles soil + see"
 	]
 ];
 
