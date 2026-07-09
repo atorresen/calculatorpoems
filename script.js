@@ -51,7 +51,7 @@ function show(n) {
 // n is the index of the poem, i is the index of the line in the poem
 function flipButton(n, i) {
 	const button = document.createElement("button");
-	button.class = "flipButton";
+	button.classList.add("flipButton");
 	button.innerText = "flip";
 	button.onclick = function() {
 		let f = (flipped[n][i] + 1) % 2;
